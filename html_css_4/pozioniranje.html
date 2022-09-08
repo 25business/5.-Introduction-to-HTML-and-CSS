@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 3000px;
+        }
+
+        #p1, #p2, #p3, #p4 {
+            background-color: salmon;
+            border: 1px solid purple;
+            margin: 10px;
+        }
+        #kontejner {
+            background-color: skyblue;
+            border: 2px solid dodgerblue;
+            padding: 10px;
+            position: relative;
+        }
+
+        #p1 {
+            position: sticky;
+            top: 50px;
+            left: 50px;
+            z-index: 6;
+        }
+
+        #p3 {
+            position: absolute;
+            bottom: 10px;
+            right: 100px;
+        }
+
+        #p2 {
+            position: relative;
+            left: 200px;
+        }
+
+        #p4 {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="p1">
+        <p>Element P1</p>
+    </div>
+    <div id="p2">
+        <p>Element P2</p>
+    </div>
+    <div id="p3">
+        <p>Element P3</p>
+    </div>
+    <div id="kontejner">
+        <div id="p4">
+        <p>Element P4</p>
+        </div>
+    </div>
+</body>
+</html>

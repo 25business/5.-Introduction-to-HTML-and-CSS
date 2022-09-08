@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        #kontejner {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .celija {
+            background-color: lightblue;
+            border: 1px solid blue;
+            margin: 5px;
+            /*flex-basis: 40%;*/
+            /*flex-grow: 1;*/
+            width: 300px;
+            order: 3;
+        }
+
+        #cetvrta {
+            justify-self: self-end;
+        }
+    </style>
+</head>
+<body>
+    <div id="kontejner">
+        <div class="celija">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi, nobis quas! Laborum odit, quos, nobis cupiditate nihil eaque magni officia nam delectus error omnis quidem amet temporibus dolore ullam voluptates.</p>
+            <p>Velit doloribus nisi repellendus incidunt excepturi aspernatur, commodi molestias voluptatem voluptatibus quo dolore nostrum mollitia ratione! Nesciunt optio voluptas dolores nihil accusamus vel! Fuga amet voluptatibus neque optio, impedit beatae?</p>
+        </div>
+        <div class="celija">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed a hic quisquam esse ipsam itaque incidunt obcaecati quia voluptates ea? Iusto, quos doloremque. Aliquid animi aperiam hic? Earum, repudiandae rem.</p>
+            <p>Quae, aperiam maxime perspiciatis dolores, vero corrupti deleniti impedit dolor veritatis incidunt, cumque ipsa quasi enim. Qui omnis, maiores doloremque laborum natus, cupiditate sed, exercitationem totam vero nulla explicabo fugiat.</p>
+            <p>Minus, delectus! Provident expedita amet similique laudantium animi obcaecati atque, qui molestias ipsum? Esse animi ipsum sed veritatis dolor enim rem temporibus aliquid, pariatur reprehenderit labore fugit porro possimus exercitationem.</p>
+        </div>
+        <div class="celija">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum hic expedita repellendus inventore eligendi ullam laudantium numquam voluptas maiores eius.</p>
+        </div>
+        <div class="celija" id="cetvrta">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi unde quas eos praesentium nobis quos, tenetur nemo consequuntur itaque. Voluptatibus, odit. Deleniti earum minus at possimus, odit atque error similique officia, maiores, aliquid ea? Quisquam optio necessitatibus suscipit doloremque sunt ratione qui quaerat cumque unde nemo atque, magni numquam architecto?</p>
+        </div>
+    </div>
+</body>
+</html>

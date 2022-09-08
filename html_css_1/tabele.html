@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Tabele</title>
+        <style>
+            td { font-size:  24px; }
+        </style>
+    </head>
+    <body>
+        <table border="1">
+            <tr>
+                <td>Ime</td>
+                <td>Prezime</td>
+                <td>Godine</td>
+            </tr>
+            <tr>
+                <td>Petar</td>
+                <td>Peric</td>
+                <td>27</td>
+            </tr>
+        </table>
+
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>City</th>
+                    <th>2019 growth</th>
+                    <th>2020 growth</th>
+                    <th>2021 growth</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>London</td>
+                    <td>1.7</td>
+                    <td>-3.6</td>
+                    <td>0.8</td>
+                </tr>
+                <tr>
+                    <td>Paris</td>
+                    <td>1.3</td>
+                    <td>-4.4</td>
+                    <td>0.2</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td><b>Average</b></td>
+                    <td>1.5</td>
+                    <td>-4.0</td>
+                    <td>0.5</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <table border="1">
+            <tr>
+                <td rowspan="3">1.1 / 2.1 / 3.1</td>
+                <td colspan="2">1.2 / 1.3</td>
+                <td>1.4</td>
+            </tr>
+            <tr>
+                <td>2.2</td>
+                <td colspan="2" rowspan="2">
+                    2.3 / 2.4<br/>
+                    3.3 / 3.4
+                </td>
+            </tr>
+            <tr>
+                <td>3.2</td>
+            </tr>
+        </table>
+
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Employee</th>
+                    <th>Position</th>
+                    <th>From</th>
+                    <th>To</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">John Peters</td>
+                    <td>Technical director</td>
+                    <td rowspan="2">2005</td>
+                    <td rowspan="2">present</td>
+                </tr>
+                <tr>
+                    <td>CEO</td>
+                </tr>
+                <tr>
+                    <td>Ashton Mills</td>
+                    <td>Junior programmer</td>
+                    <td colspan="2">2005</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Emily Johnson</td>
+                    <td>CTO</td>
+                    <td colspan="2">2018</td>
+                </tr>
+                <tr>
+                    <td>CEO</td>
+                    <td>2018</td>
+                    <td>present</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
